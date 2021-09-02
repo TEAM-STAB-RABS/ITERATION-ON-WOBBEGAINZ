@@ -52,7 +52,7 @@ const Signup = ({ setUserInfo }) => {
   if (!loggedIn) {
     return (
       <section>
-        <h3>Signup to WobbeGainz:</h3>
+        <h3 className="drill">Signup to WobbeGainz:</h3>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -60,8 +60,9 @@ const Signup = ({ setUserInfo }) => {
           }}
         >
           {/* EMAIL INPUT */}
-          <label htmlFor="newUserEmail">Email Address:</label>
+          <label htmlFor="newUserEmail" className="drill">Email Address:</label>
           <input
+            className="form"
             id="newUserEmail"
             type="email"
             placeholder="Email Address"
@@ -73,10 +74,11 @@ const Signup = ({ setUserInfo }) => {
             name="email"
             required
           />
-
+          <p> </p>
           {/* NAME INPUT */}
-          <label htmlFor="newUserName">Display Name:</label>
+          <label htmlFor="newUserName" className="drill">Display Name:</label>
           <input
+            className="form"
             id="newUserName"
             type="text"
             placeholder="Display Name"
@@ -88,10 +90,11 @@ const Signup = ({ setUserInfo }) => {
             name="display name"
             required
           />
-
+          <p> </p>
           {/* PASSWORD INPUT */}
-          <label htmlFor="newUserPassword">Password:</label>
+          <label htmlFor="newUserPassword" className="drill">Password:</label>
           <input
+            className="form"
             id="newUserPassword"
             type="password"
             placeholder="Password"
@@ -104,7 +107,7 @@ const Signup = ({ setUserInfo }) => {
             required
           />
 
-          <button type="submit">Sign Up</button>
+          <button type="submit" className="signUpBtn">Sign Up</button>
         </form>
 
         {/* SIGNUP ERROR MESSAGE */}

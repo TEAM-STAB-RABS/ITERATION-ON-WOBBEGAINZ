@@ -7,6 +7,8 @@ import styles from './scss/application.scss';
 
 // Import React Components
 import App from './components/App.jsx';
+// Import Bootstrap for WebPack
+import 'bootstrap';
 
 render(
   <Router>

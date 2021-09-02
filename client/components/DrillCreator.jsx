@@ -77,21 +77,21 @@ const DrillCreator = () => {
     <div className="drill">
       <h1>Create a new drill:</h1>
         <p>
-          <span>Exercise Name: </span>{drillData.name}</p>
+          <span className="createDrill">Exercise Name: </span><span className = "drills">{drillData.name}</span></p>
         <p>
-          <span>Exercise Description: </span>{drillData.description}</p>
+          <span className="createDrill">Exercise Description: </span><span className = "drills">{drillData.description}</span></p>
         <p>
-          <span>Exercise Type: </span>{drillData.type}</p>
+          <span className="createDrill">Exercise Type: </span><span className = "drills">{drillData.type}</span></p>
         <p>
-          <span>Last Weight (LBs): </span>{drillData.last_weight}</p>
+          <span className="createDrill">Last Weight (LBs): </span><span className = "drills">{drillData.last_weight}</span></p>
         <p>
-          <span>Last Reps: </span>{drillData.last_reps}</p>
+          <span className="createDrill">Last Reps: </span><span className = "drills">{drillData.last_reps}</span></p>
         <p>
-          <span>Last Sets: </span>{drillData.last_sets}</p>
+          <span className="createDrill">Last Sets: </span><span className = "drills">{drillData.last_sets}</span></p>
         <p>
-          <span>Last Rest (Mins): </span> {drillData.last_rest}
+          <span className="createDrill">Last Rest (Mins): </span><span className = "drills"> {drillData.last_rest}</span>
         </p>
-    
+
       {/* DRILL INPUT FORM */}
       <form
         onSubmit={(e) => {

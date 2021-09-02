@@ -54,7 +54,7 @@ const Login = ({ setUserInfo }) => {
   if (!loggedIn) {
     return (
       <section>
-        <h1>Login to WobbeGainz:</h1>
+        <h1 id="login">Login to WobbeGainz:</h1>
         <form
           onSubmit={(e) => {
             e.preventDefault();
@@ -62,8 +62,9 @@ const Login = ({ setUserInfo }) => {
           }}
         >
           {/* EMAIL INPUT */}
-          <label htmlFor="userEmail">Email Address:</label>
+          <label htmlFor="userEmail" className="logs">Email Address:</label>
           <input
+            className="form"
             id="userEmail"
             type="email"
             placeholder="Email Address"
@@ -75,10 +76,11 @@ const Login = ({ setUserInfo }) => {
             name="email"
             required
           />
-
+          <p> </p>
           {/* PASSWORD INPUT */}
-          <label htmlFor="userPassword">Password:</label>
+          <label htmlFor="userPassword" className="logs">Password:</label>
           <input
+            className="form"
             id="userPassword"
             type="password"
             placeholder="Password"
@@ -91,7 +93,7 @@ const Login = ({ setUserInfo }) => {
             required
           />
 
-          <button type="submit">Log In</button>
+          <button type="submit" id="loginBtn">Log In</button>
         </form>
         {/* LOGIN ERROR MESSAGE */}
         {errorMessage ? (

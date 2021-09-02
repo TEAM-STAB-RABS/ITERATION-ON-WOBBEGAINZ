@@ -20,14 +20,14 @@ const ExercisesDisplay = () => {
 
   return (
     <div>
-      <h1>Pick an Exercise:</h1>
+      <h1 id="list">Pick an Exercise:</h1>
       {exerciseData.map((exercise, i) => {
         console.log('makes all data exercises');
         return (
           <div class="exercise" key={exercise.name} className="exercise">
-            <h2>{exercise.name}</h2>
-            <h3>Type: {exercise.typesname}</h3>
-            <h3>Description: {exercise.description}</h3>
+            <h2 className="list">{exercise.name}</h2>
+            <h3 className="list">Type: {exercise.typesname}</h3>
+            <h3 className="list">Description: {exercise.description}</h3>
             <Link to={`/drill/${exercise._id}`}>
               <button>Start Drill</button>
             </Link>

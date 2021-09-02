@@ -5,7 +5,16 @@
 /*
 ### OVERALL STYLES
 */
+* {
+  background-color: #bebebe;
+}
 
+body {
+  max-width: 100%;
+  margin: auto;
+  background-color: rgba(138, 76, 76, 0.801);
+  color: rgb(255, 0, 0);
+}   
 h1 {
   color: rgb(12, 12, 12);
   text-align: center;
@@ -14,22 +23,118 @@ h1 {
 .link {
   color: rgb(20, 108, 190);
   margin-left: 10px;
-  font-size: 20px;
+  font-size: 35px;
 }
 
 input {
   margin-right: 10px;
   margin-left: 10px;
+  color: rgb(0, 0, 0);
+  width: 15%;
+  height: 100%;
 }
 
 .exercise {
+  border-radius: 8px;
   border-color:rgb(12, 12, 12);
   border-style: solid;
   text-align: center;
   padding: 10px;
   margin-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  color: rgb(255, 0, 0);
 }
 
 span {
   font-weight: bold;
+}
+
+
+
+#login {
+  font-family: "Impact", fantasy;
+  color: #303030;
+  font-size: 85px;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+.form {
+  background-color: #d8d8d8;
+  border-radius: 15px;
+  height: 40px;
+  width: 300px;
+}
+
+.logs {
+  font-family: "Impact", fantasy;
+  color: #303030;
+  font-size: 70px;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+
+#loginBtn {
+  border-radius: 10px;
+  color: white;
+  background-color: #505050;
+  box-shadow: #303030;
+}
+.signUpBtn {
+  border-radius: 10px;
+  color: white;
+  background-color: #505050;
+  box-shadow: #303030;
+}
+.list {
+  color: #303030;
+  font-family: "Impact", fantasy;
+}
+
+#list {
+  color: #202020;
+  font-family: "Impact", fantasy;
+}
+
+.drill {
+  font-family: "Impact", fantasy;
+  color: #303030;
+  font-size: 70px;
+}
+
+span {
+  font-family: "Impact", fantasy;
+  color: #303030;
+  font-size: 70px;
+}
+
+.drills {
+  font-family: "Impact", fantasy;
+  color: #ffffff;
+  font-size: 70px;
+}
+
+#history {
+  text-decoration: underline;
 }
